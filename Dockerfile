@@ -11,7 +11,7 @@ ENV PYTHONPATH /opt/caffe/python
 ENV PATH $PATH:/opt/caffe/.build_release/tools
 
 # Get dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update -m && apt-get install -y \
   bc \
   cmake \
   curl \
